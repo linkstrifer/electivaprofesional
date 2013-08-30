@@ -36,7 +36,7 @@ public class MessageImpl extends UnicastRemoteObject implements Message {
             File log = new File("log/message_log.html");
             FileWriter writer = new FileWriter(log,true);
             
-            writer.write("<p><span><b>ID</b>"+id+"</span><span><b>Nombres</b>"+names+"</span><span><b>Apellidos</b>"+lastname+"</span><span><b>Correo electrónico</b>"+email+"</span><span><b>Hora</b>"+currentHour+"</span><span><b>Fecha</b>"+date+"</span><span><b>Dirección IP</b>"+ip+"</span></p>");
+            writer.write("<p><span><b>ID</b>"+id+"</span><span class='capitalize'><b>Nombres</b>"+names+"</span><span class='capitalize'><b>Apellidos</b>"+lastname+"</span><span><b>Correo electrónico</b>"+email+"</span><span><b>Hora</b>"+currentHour+"</span><span><b>Fecha</b>"+date+"</span><span><b>Dirección IP</b>"+ip+"</span></p>");
             writer.close();
         }catch(Exception e){
             System.out.println(e);
